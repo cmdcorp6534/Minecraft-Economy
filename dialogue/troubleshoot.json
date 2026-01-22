@@ -1,0 +1,91 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "troubleshoot",
+                "npc_name": {
+                    "rawtext": [{"text":"疑难解答"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"您遇到了什么问题？"}]
+                },
+                "buttons": [
+                    {
+                        "name":"权限问题/功能被禁用",
+                        "commands": [
+                            "dialogue open @s @initiator troubleperm"
+                        ]
+                    },
+                    {
+                        "name":"请求退款",
+                        "commands": [
+                            "dialogue open @s @initiator troublerefund"
+                        ]
+                    },
+                    {
+                        "name":"其他问题",
+                        "commands": [
+                            "dialogue open @s @initiator troubleother"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "troubleperm",
+                "npc_name": {
+                    "rawtext": [{"text":"疑难解答>权限问题/功能被禁用"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"权限介绍\n\n1. 无配置权限\n这是每个玩家的初始权限。\n可用功能：\na)查询余额\nb)存入\nc)商店\nd)疑难解答\n2. 管理员\n操作员使用 tag 命令添加 admin 标签即得权限，移除标签即失权限。\n可用功能：\na)查询余额\nb)存入\nc)商店\nd)管理员工具\ne)疑难解答\n3. 被封禁\n操作员使用 tag 命令添加 banned 标签即得权限，移除标签即失权限。\n此权限配置优先级高于管理员。\n可用功能：\na)查询余额\nb)疑难解答\n3. 工程师\n此权限仅用于开发调试，已对玩家封锁，仅授权人员可用，房主可修改行为包来管理此权限。\n此权限配置优先级高于被封禁。\n\n\n封禁申诉\n\n本行为包暂未推出申诉渠道，您可以通过游戏聊天或其他方式联系操作员，或者您可以进行数据清除。"}]
+                },
+                "buttons": [
+                    {
+                        "name":"数据清除",
+                        "commands": [
+                            "dialogue open @s @initiator wipe"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "troublerefund",
+                "npc_name": {
+                    "rawtext": [{"text":"疑难解答>请求退款"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"抱歉，由于技术限制，当前无法处理您的退款请求。"}]
+                }
+            },
+            {
+                "scene_tag": "troubleother",
+                "npc_name": {
+                    "rawtext": [{"text":"疑难解答>其他问题"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请联系操作员或者其他游戏支持人员，本行为包开发者无法处理您的问题。"}]
+                }
+            },
+            {
+                "scene_tag": "wipe",
+                "npc_name": {
+                    "rawtext": [{"text":"疑难解答>权限问题/功能被禁用>清除数据"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"这将会：\n1. 解除封禁。\n2. 夺去管理员权限。\n3. 重置余额\n\n除非您已被封禁且申诉被拒绝，否则不建议这么做。\n\n点击“确定”执行数据清除，否则请关闭此页面。"}]
+                },
+                "buttons": [
+                    {
+                        "name":"确定",
+                        "commands": [
+                            "scoreboard players reset @initiator balance",
+                            "tag @initiator remove admin",
+                            "tag @initiator remove banned",
+                            "dialogue open @s @initiator success"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
