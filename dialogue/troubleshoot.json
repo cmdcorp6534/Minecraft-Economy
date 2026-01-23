@@ -24,9 +24,9 @@
                         ]
                     },
                     {
-                        "name":"其他问题",
+                        "name":"组件授权信息",
                         "commands": [
-                            "dialogue open @s @initiator troubleother"
+                            "dialogue open @s @initiator licenseinfo"
                         ]
                     }
                 ]
@@ -58,12 +58,12 @@
                 }
             },
             {
-                "scene_tag": "troubleother",
+                "scene_tag": "licenseinfo",
                 "npc_name": {
-                    "rawtext": [{"text":"疑难解答>其他问题"}]
+                    "rawtext": [{"text":"疑难解答>组件授权信息"}]
                 },
                 "text": {
-                    "rawtext": [{"text":"请联系操作员或者其他游戏支持人员，本行为包开发者无法处理您的问题。"}]
+                    "rawtext": [{"text":"本组件已开源，仓库地址：\nhttps://github.com/cmdcorp6534/Minecraft-Economy\n\n\n开源协议：GNU AFFERO GENERAL PUBLIC LICENSE  Version 3, 19 November 2007"}]
                 }
             },
             {
