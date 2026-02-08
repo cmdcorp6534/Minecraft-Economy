@@ -13,9 +13,17 @@
 
 指纹：EAABF7F5AC11154705B1EFFFB5867B7F6C47362E
 
-## 现用证书
+
 邮箱（主要）：cmdcorp6534@163.com
 
 邮箱（次要）：cmdcorp6534@outlook.com
 
 指纹：4B201C06ABADCCA2F3B9140DCF1104368CDB098F
+
+## 现用证书
+
+邮箱（主要）：cmdcorp6534@163.com
+
+邮箱（次要）：cmdcorp6534@outlook.com
+
+指纹：CC94DBF6AD1BB73348024BAF6C256DB81D873035
