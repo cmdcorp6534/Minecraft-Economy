@@ -1,0 +1,61 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "first_page_default",
+                "npc_name": {
+                    "rawtext": [{"text":"首页"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"欢迎访问经济终端！"}]
+                },
+                "buttons": [
+                    {
+                        "name":"查询余额",
+                        "commands": [
+                            "title @initiator title 账号余额",
+                            "titleraw @initiator subtitle {\"rawtext\":[{\"text\":\"#\"},{\"score\":{\"name\":\"@initiator\",\"objective\":\"balance\"}}]}"
+                        ]
+                    },
+                    {
+                        "name":"存入",
+                        "commands": [
+                            "dialogue open @s @initiator[tag=!banned] bank",
+                            "dialogue open @s @initiator[tag=banned] fault"
+                        ]
+                    },
+                    {
+                        "name":"商店",
+                        "commands": [
+                            "dialogue open @s @initiator[tag=!banned] store",
+                            "dialogue open @s @initiator[tag=banned] fault"
+                        ]
+                    },
+                    {
+                        "name":"管理员工具",
+                        "commands": [
+                            "execute as @initiator[tag=!banned] run tag @s[tag=admin] add admin_authed",
+                            "dialogue open @s @initiator[tag=admin_authed] admin_tool",
+                            "dialogue open @s @initiator[tag=!admin_authed] fault",
+                            "tag @initiator remove admin_authed"
+                        ]
+                    },
+                    {
+                        "name":"工程师工具",
+                        "commands": [
+                            "dialogue open @s @initiator[tag=engineer] engineer_tool",
+                            "dialogue open @s @initiator[tag=!engineer] fault"
+                        ]
+                    },
+                    {
+                        "name":"疑难解答",
+                        "commands": [
+                            "dialogue open @s @initiator troubleshoot"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
