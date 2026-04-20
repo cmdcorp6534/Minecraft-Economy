@@ -1,0 +1,290 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:npc_dialogue": {
+        "scenes": [
+            {
+                "scene_tag": "DEVKEY",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"说明\n\n\nDEVKEY 是一串5个字符，包含A-F的字符串，形如 ABCDE\n\n1. 此处仅用于配置 DEVKEY ，不对其有效性进行检验。\n2. 若在配置后仍无法使用开发者工具，请重新配置 DEVKEY.\n3. 在行为包内更改正确的 DEVKEY 后，先前配置的 DEVKEY 将失效。\n4. 不保证存在正确的 DEVKEY.\n5. 下方的开始按钮将在您输入 DEVKEY 之前清除先前配置的 DEVKEY.\n6. 点击下方的开始按钮开始配置 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"开始",
+                        "commands": [
+                            "scoreboard players set @initiator config_devkey 0",
+                            "dialogue open @s @initiator DEVKEY1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "DEVKEY1",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请输入第[1]位 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"A",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 10000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"B",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 20000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"C",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 30000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"D",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 40000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"E",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 50000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"F",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 60000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "DEVKEY2",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请输入第[2]位 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"A",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 1000",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"B",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 2000",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"C",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 3000",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"D",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 4000",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"E",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 5000",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"F",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 6000",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "DEVKEY3",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请输入第[3]位 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"A",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 100",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"B",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 200",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"C",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 300",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"D",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 400",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"E",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 500",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"F",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 600",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "DEVKEY4",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请输入第[4]位 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"A",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 10",
+                            "dialogue open @s @initiator DEVKEY5"
+                        ]
+                    },
+                    {
+                        "name":"B",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 20",
+                            "dialogue open @s @initiator DEVKEY5"
+                        ]
+                    },
+                    {
+                        "name":"C",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 30",
+                            "dialogue open @s @initiator DEVKEY5"
+                        ]
+                    },
+                    {
+                        "name":"D",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 40",
+                            "dialogue open @s @initiator DEVKEY5"
+                        ]
+                    },
+                    {
+                        "name":"E",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 50",
+                            "dialogue open @s @initiator DEVKEY5"
+                        ]
+                    },
+                    {
+                        "name":"F",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 60",
+                            "dialogue open @s @initiator DEVKEY5"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "DEVKEY5",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请输入第[5]位 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"A",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 1",
+                            "dialogue open @s @initiator success"
+                        ]
+                    },
+                    {
+                        "name":"B",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 2",
+                            "dialogue open @s @initiator success"
+                        ]
+                    },
+                    {
+                        "name":"C",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 3",
+                            "dialogue open @s @initiator success"
+                        ]
+                    },
+                    {
+                        "name":"D",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 4",
+                            "dialogue open @s @initiator success"
+                        ]
+                    },
+                    {
+                        "name":"E",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 5",
+                            "dialogue open @s @initiator success"
+                        ]
+                    },
+                    {
+                        "name":"F",
+                        "commands": [
+                            "scoreboard players add @initiator config_devkey 6",
+                            "dialogue open @s @initiator success"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

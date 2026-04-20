@@ -11,5 +11,11 @@ tag @a[scores={balance=..-1},tag=!banned] add banned
 execute as @a[tag=!bypass_gm_check] run execute as @s[m=!default] run tag @s[m=!survival,tag=!banned] add banned
 
 #Engineer Loader
-tag cmdcorp6534 add engineer
-tag @a[name=!cmdcorp6534] remove engineer
+#tag cmdcorp6534 add engineer
+#tag @a[name=!cmdcorp6534] remove engineer
+
+#DEV Loader
+scoreboard objectives add correct_devkey dummy
+scoreboard objectives add config_devkey dummy
+scoreboard players set devkey correct_devkey 14632
+scoreboard players add @a config_devkey 0

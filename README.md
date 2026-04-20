@@ -6,4 +6,4 @@
 包含基本的经济组件功能。
 
 # 注意
-如有需要，请修改 loader.mcfunction 中的 Engineer Loader 部分。这是本行为包的一个后门。
+请根据实际需要，修改 loader.mcfunction 中 DEV Loader 部分，更改正确的 DEVKEY 。
