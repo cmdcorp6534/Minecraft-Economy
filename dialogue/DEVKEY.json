@@ -8,13 +8,13 @@
                     "rawtext": [{"text":"配置 DEVKEY"}]
                 },
                 "text": {
-                    "rawtext": [{"text":"说明\n\n\nDEVKEY 是一串5个字符，包含A-F的字符串，形如 ABCDE\n\n1. 此处仅用于配置 DEVKEY ，不对其有效性进行检验。\n2. 若在配置后仍无法使用开发者工具，请重新配置 DEVKEY.\n3. 在行为包内更改正确的 DEVKEY 后，先前配置的 DEVKEY 将失效。\n4. 不保证存在正确的 DEVKEY.\n5. 下方的开始按钮将在您输入 DEVKEY 之前清除先前配置的 DEVKEY.\n6. 点击下方的开始按钮开始配置 DEVKEY."}]
+                    "rawtext": [{"text":"说明\n\n\nDEVKEY 是一个属于[0, 9999]的数。\n\n1. 此处仅用于配置 DEVKEY ，不对其有效性进行检验。\n2. 若在配置后仍无法使用开发者工具，请重新配置 DEVKEY.\n3. 在行为包内更改正确的 DEVKEY 后，先前配置的 DEVKEY 将失效。\n4. 不保证存在正确的 DEVKEY.\n5. 点击下方的开始按钮开始配置 DEVKEY."}]
                 },
                 "buttons": [
                     {
                         "name":"开始",
                         "commands": [
-                            "scoreboard players set @initiator config_devkey 0",
+                            "scoreboard players set @initiator entering_devkey 0",
                             "dialogue open @s @initiator DEVKEY1"
                         ]
                     }
@@ -30,45 +30,44 @@
                 },
                 "buttons": [
                     {
-                        "name":"A",
+                        "name":"0",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 10000",
+                            "scoreboard players add @initiator entering_devkey 0",
                             "dialogue open @s @initiator DEVKEY2"
                         ]
                     },
                     {
-                        "name":"B",
+                        "name":"1",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 20000",
+                            "scoreboard players add @initiator entering_devkey 1000",
                             "dialogue open @s @initiator DEVKEY2"
                         ]
                     },
                     {
-                        "name":"C",
+                        "name":"2",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 30000",
+                            "scoreboard players add @initiator entering_devkey 2000",
                             "dialogue open @s @initiator DEVKEY2"
                         ]
                     },
                     {
-                        "name":"D",
+                        "name":"3",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 40000",
+                            "scoreboard players add @initiator entering_devkey 3000",
                             "dialogue open @s @initiator DEVKEY2"
                         ]
                     },
                     {
-                        "name":"E",
+                        "name":"4",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 50000",
+                            "scoreboard players add @initiator entering_devkey 4000",
                             "dialogue open @s @initiator DEVKEY2"
                         ]
                     },
                     {
-                        "name":"F",
+                        "name":"5-9",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 60000",
-                            "dialogue open @s @initiator DEVKEY2"
+                            "dialogue open @s @initiator DEVKEY1E"
                         ]
                     }
                 ]
@@ -83,45 +82,44 @@
                 },
                 "buttons": [
                     {
-                        "name":"A",
+                        "name":"0",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 1000",
+                            "scoreboard players add @initiator entering_devkey 0",
                             "dialogue open @s @initiator DEVKEY3"
                         ]
                     },
                     {
-                        "name":"B",
+                        "name":"1",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 2000",
+                            "scoreboard players add @initiator entering_devkey 100",
                             "dialogue open @s @initiator DEVKEY3"
                         ]
                     },
                     {
-                        "name":"C",
+                        "name":"2",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 3000",
+                            "scoreboard players add @initiator entering_devkey 200",
                             "dialogue open @s @initiator DEVKEY3"
                         ]
                     },
                     {
-                        "name":"D",
+                        "name":"3",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 4000",
+                            "scoreboard players add @initiator entering_devkey 300",
                             "dialogue open @s @initiator DEVKEY3"
                         ]
                     },
                     {
-                        "name":"E",
+                        "name":"4",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 5000",
+                            "scoreboard players add @initiator entering_devkey 400",
                             "dialogue open @s @initiator DEVKEY3"
                         ]
                     },
                     {
-                        "name":"F",
+                        "name":"5-9",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 6000",
-                            "dialogue open @s @initiator DEVKEY3"
+                            "dialogue open @s @initiator DEVKEY2E"
                         ]
                     }
                 ]
@@ -136,45 +134,44 @@
                 },
                 "buttons": [
                     {
-                        "name":"A",
+                        "name":"0",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 100",
+                            "scoreboard players add @initiator entering_devkey 0",
                             "dialogue open @s @initiator DEVKEY4"
                         ]
                     },
                     {
-                        "name":"B",
+                        "name":"1",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 200",
+                            "scoreboard players add @initiator entering_devkey 10",
                             "dialogue open @s @initiator DEVKEY4"
                         ]
                     },
                     {
-                        "name":"C",
+                        "name":"2",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 300",
+                            "scoreboard players add @initiator entering_devkey 20",
                             "dialogue open @s @initiator DEVKEY4"
                         ]
                     },
                     {
-                        "name":"D",
+                        "name":"3",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 400",
+                            "scoreboard players add @initiator entering_devkey 30",
                             "dialogue open @s @initiator DEVKEY4"
                         ]
                     },
                     {
-                        "name":"E",
+                        "name":"4",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 500",
+                            "scoreboard players add @initiator entering_devkey 40",
                             "dialogue open @s @initiator DEVKEY4"
                         ]
                     },
                     {
-                        "name":"F",
+                        "name":"5-9",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 600",
-                            "dialogue open @s @initiator DEVKEY4"
+                            "dialogue open @s @initiator DEVKEY3E"
                         ]
                     }
                 ]
@@ -189,98 +186,262 @@
                 },
                 "buttons": [
                     {
-                        "name":"A",
+                        "name":"0",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 10",
-                            "dialogue open @s @initiator DEVKEY5"
+                            "scoreboard players add @initiator entering_devkey 0",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
+                            "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"B",
+                        "name":"1",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 20",
-                            "dialogue open @s @initiator DEVKEY5"
+                            "scoreboard players add @initiator entering_devkey 1",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
+                            "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"C",
+                        "name":"2",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 30",
-                            "dialogue open @s @initiator DEVKEY5"
+                            "scoreboard players add @initiator entering_devkey 2",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
+                            "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"D",
+                        "name":"3",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 40",
-                            "dialogue open @s @initiator DEVKEY5"
+                            "scoreboard players add @initiator entering_devkey 3",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
+                            "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"E",
+                        "name":"4",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 50",
-                            "dialogue open @s @initiator DEVKEY5"
+                            "scoreboard players add @initiator entering_devkey 4",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
+                            "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"F",
+                        "name":"5-9",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 60",
-                            "dialogue open @s @initiator DEVKEY5"
+                            "dialogue open @s @initiator DEVKEY4E"
                         ]
                     }
                 ]
             },
             {
-                "scene_tag": "DEVKEY5",
+                "scene_tag": "DEVKEY1E",
                 "npc_name": {
                     "rawtext": [{"text":"配置 DEVKEY"}]
                 },
                 "text": {
-                    "rawtext": [{"text":"请输入第[5]位 DEVKEY."}]
+                    "rawtext": [{"text":"请输入第[1]位 DEVKEY."}]
                 },
                 "buttons": [
                     {
-                        "name":"A",
+                        "name":"5",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 1",
+                            "scoreboard players add @initiator entering_devkey 5000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"6",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 6000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"7",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 7000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"8",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 8000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"9",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 9000",
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    },
+                    {
+                        "name":"0-4",
+                        "commands": [
+                            "dialogue open @s @initiator DEVKEY1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "DEVKEY2E",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请输入第[2]位 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"5",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 500",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"6",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 600",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"7",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 700",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"8",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 800",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"9",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 900",
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    },
+                    {
+                        "name":"0-4",
+                        "commands": [
+                            "dialogue open @s @initiator DEVKEY2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "DEVKEY3E",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请输入第[3]位 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"5",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 50",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"6",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 60",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"7",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 70",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"8",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 80",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"9",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 90",
+                            "dialogue open @s @initiator DEVKEY4"
+                        ]
+                    },
+                    {
+                        "name":"0-4",
+                        "commands": [
+                            "dialogue open @s @initiator DEVKEY3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "scene_tag": "DEVKEY4E",
+                "npc_name": {
+                    "rawtext": [{"text":"配置 DEVKEY"}]
+                },
+                "text": {
+                    "rawtext": [{"text":"请输入第[4]位 DEVKEY."}]
+                },
+                "buttons": [
+                    {
+                        "name":"5",
+                        "commands": [
+                            "scoreboard players add @initiator entering_devkey 5",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
                             "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"B",
+                        "name":"6",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 2",
+                            "scoreboard players add @initiator entering_devkey 6",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
                             "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"C",
+                        "name":"7",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 3",
+                            "scoreboard players add @initiator entering_devkey 7",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
                             "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"D",
+                        "name":"8",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 4",
+                            "scoreboard players add @initiator entering_devkey 8",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
                             "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"E",
+                        "name":"9",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 5",
+                            "scoreboard players add @initiator entering_devkey 9",
+                            "scoreboard players operation @initiator config_devkey = @initiator entering_devkey",
                             "dialogue open @s @initiator success"
                         ]
                     },
                     {
-                        "name":"F",
+                        "name":"0-4",
                         "commands": [
-                            "scoreboard players add @initiator config_devkey 6",
-                            "dialogue open @s @initiator success"
+                            "dialogue open @s @initiator DEVKEY4"
                         ]
                     }
                 ]

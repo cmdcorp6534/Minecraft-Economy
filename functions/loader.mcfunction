@@ -17,5 +17,7 @@ execute as @a[tag=!bypass_gm_check] run execute as @s[m=!default] run tag @s[m=!
 #DEV Loader
 scoreboard objectives add correct_devkey dummy
 scoreboard objectives add config_devkey dummy
-scoreboard players set devkey correct_devkey 14632
-scoreboard players add @a config_devkey 0
+scoreboard objectives add entering_devkey dummy
+scoreboard players set devkey correct_devkey 1234
+#scoreboard players add @a config_devkey 0
+scoreboard players add @a entering_devkey 0

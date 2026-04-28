@@ -51,7 +51,7 @@
                         ]
                     },
                     {
-                        "name":"账号权限管理",
+                        "name":"账号",
                         "commands": [
                             "dialogue open @s @initiator account"
                         ]
